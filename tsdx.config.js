@@ -7,7 +7,7 @@ module.exports = {
   rollup(config, options) {
     config.plugins.push(
       postcss({
-        inject: false,
+        inject: true,
         extract: !!options.writeMeta,
         modules: true, // 使用css modules
         // namedExport: true, // 类名导出
