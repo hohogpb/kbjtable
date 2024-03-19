@@ -1,0 +1,62 @@
+.editable {
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+
+  table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-width: 0;
+    cursor: default;
+    margin: 0;
+    max-height: none;
+    max-width: none;
+    outline-width: 0;
+    width: 0; // 设置0 为完全固定宽度性能最高，设置100% 可以在比较大的时候进行扩展
+    position: relative;
+    font-size: 12px;
+    background-color: #fff;
+
+    tr {
+      border-bottom: 1px solid #d9d9d9;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 6px 10px;
+      border: 1px solid #d9d9d9;
+      box-sizing: border-box;
+    }
+
+    th {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background-color: rgb(235, 236, 240);
+      position: -webkit-sticky;
+      position: sticky;
+      font-weight: normal;
+    }
+  }
+}
+
+.editPlaceholder {
+  font-size: 12px;
+  
+  input {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    margin: 0;
+    padding: 6px 11px;
+    //border: 2px solid #5292f7;
+    //width: -moz-fit-content;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 2px #5292f7;
+  }
+}
